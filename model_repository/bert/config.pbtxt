@@ -1,0 +1,20 @@
+name: "bert"
+platform: "pytorch_libtorch"
+max_batch_size: 32
+input [
+    {
+        name: "input__0"
+        data_type: TYPE_INT32
+        dims: [256]
+    },
+    {
+        name: "input__1"
+        data_type: TYPE_INT32
+        dims: [256]
+    }
+]
+output {
+    name: "output__0"
+    data_type: TYPE_FP32
+    dims: [2]
+}
